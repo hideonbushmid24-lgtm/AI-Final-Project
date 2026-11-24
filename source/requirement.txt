@@ -1,0 +1,2 @@
+﻿# Python dependencies for the AI final project.
+# Add library names and tested versions during implementation.
