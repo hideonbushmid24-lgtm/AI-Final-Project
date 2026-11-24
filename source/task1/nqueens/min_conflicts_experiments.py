@@ -125,13 +125,7 @@ class MinConflictsExperimentRunner:
 
         # Different deterministic random streams are used
         # for each strategy's tie-breaking decisions.
-        strategy_offset = (
-            0 if strategy == "random" else 1
-        )
-
-        solver_seed = (
-            initial_seed + 100 + strategy_offset
-        )
+        solver_seed = initial_seed + 100
 
         solver = MinConflictsSolver(
             strategy=strategy
