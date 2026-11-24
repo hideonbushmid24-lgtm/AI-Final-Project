@@ -91,6 +91,11 @@ def test_experiment_runner_uses_paired_initial_states(tmp_path):
             == pair[1]["initial_seed"]
         )
 
+        assert (
+            pair[0]["solver_seed"]
+            == pair[1]["solver_seed"]
+        )
+
 
 def test_experiment_summary_contains_expected_fields(tmp_path):
     runner = MinConflictsExperimentRunner(
