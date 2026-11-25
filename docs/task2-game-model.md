@@ -123,3 +123,46 @@ and supports importing external AI Agent implementations.
 - Every collision causes one point of damage.
 - A destroyed wall is removed from the board.
 - The game terminates when a player's tank or base is destroyed.
+
+## 12. Game Engine Implementation Details
+
+### State Management
+
+- Each action produces an independent copy of the game state.
+- The original state is not modified during a transition.
+- Tank and base positions cannot overlap other blocking entities.
+- Bullets are stored independently from static board entities.
+
+### Turn Management
+
+- Player 1 acts first.
+- Player 2 acts second.
+- After Player 2 completes an action, one game cycle is completed.
+- Active bullets advance at the end of each complete cycle.
+
+### Movement Rules
+
+- A tank moves one cell per movement action.
+- Movement outside the board is blocked.
+- Walls, tanks, and bases block tank movement.
+- The tank's facing direction changes even when movement is blocked.
+
+### Bullet Rules
+
+- Bullets are created at the firing tank's position.
+- The first forward cell is checked during bullet advancement.
+- Each bullet travels up to three cells per complete cycle.
+- Collision is checked after every individual cell movement.
+- A bullet is consumed immediately after a collision.
+- Bullets outside the board are removed.
+- Bullets are processed in ascending bullet ID order.
+
+### Damage and Termination
+
+- Each collision causes one point of damage.
+- Destroyed walls are removed from the board.
+- The game terminates immediately after a decisive hit.
+- Remaining bullets are discarded after game termination.
+- A state containing two defeated players is represented as a draw,
+  although the current sequential bullet-resolution policy terminates
+  after the first decisive hit.
