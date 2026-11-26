@@ -1,6 +1,5 @@
 
 import pytest
-from experiments.runner import run_benchmark
 
 from experiments.runner import (
     ALGORITHM_CLASSES,
