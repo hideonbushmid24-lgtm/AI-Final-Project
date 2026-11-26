@@ -1,0 +1,22 @@
+TANK BATTLE - EXPERIMENTAL EVALUATION
+Date: 2026-11-26T20:01:18+07:00
+Python version: 3.14.8 (tags/v3.14.8:8e6e75d, Sep 30 2026, 18:19:33) [MSC v.1944 64 bit (AMD64)]
+Operating system: Windows-11-10.0.26300-SP0
+Processor: AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+Architecture: AMD64
+Scenarios: S1_Default, S2_Open, S3_Obstacle, S4_Combat
+Search depths: [2, 3]
+Repetitions: 10
+Algorithms: Minimax, Alpha-Beta, Heuristic Minimax, Heuristic Minimax + Alpha-Beta
+
+Timing notes:
+- search_time_ms comes from SearchResult.
+- wall_time_ms measures the complete agent.search() call.
+- Both measurements exclude Python process startup time.
+Additional hardware details:
+Laptop model: ASUS ROG Strix G513IH_G513IH
+CPU model: AMD Ryzen 7 4800H with Radeon Graphics
+Physical cores: 8
+Logical processors: 16
+MaxClockSpeed reported by WMI: 2901 MHz
+Physical memory reported by Windows: 7.42 GB
