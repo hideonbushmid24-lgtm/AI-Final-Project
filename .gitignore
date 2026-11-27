@@ -24,3 +24,8 @@ Thumbs.db
 
 # Temporary files
 *.log
+
+# Task 2 intermediate experimental outputs
+source/results/task2/smoke_*
+source/results/task2/pilot_*
+source/results/task2/pilot2_*
