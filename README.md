@@ -57,4 +57,36 @@ To be updated.
 
 ## Project Status
 
-Initial project structure created.
+- Task 1: N-Queens implementation and experimental evaluation completed.
+- Task 2: Tank Battle implementation, GUI integration, and testing completed.
+- Task 3: Kakuro CSP solver, GUI, and experimental evaluation completed.
+
+Task-specific setup instructions, test commands, and experimental
+results are documented in the corresponding task README files.
+
+## Testing
+
+Run Task 3 tests:
+
+    python -m pytest source/task3/tests -v
+
+Run Task 2 tests:
+
+    python -m pytest source/task2/tests -q
+
+Some Task 1 Glucose3 tests may require a Windows environment
+that permits loading the PySAT native solver extension.
+
+## Experimental Results
+
+Experimental data and figures are stored under:
+
+    source/results/task1/
+    source/results/task2/
+    source/results/task3/
+
+## Documentation
+
+- Task 3: source/task3/README.md
+- IEEE report: report/ieee/
+- Project documentation: docs/
