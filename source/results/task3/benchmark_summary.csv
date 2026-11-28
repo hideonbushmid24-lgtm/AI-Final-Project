@@ -1,0 +1,5 @@
+scenario,operation,runs,solved_runs,solve_rate_percent,consistency_checks,consistent_runs,consistency_rate_percent,valid_solutions,validation_attempts,valid_solution_rate_percent,distinct_solutions_observed,mean_time_ms,median_time_ms,std_time_ms,min_time_ms,max_time_ms,mean_nodes,mean_backtracks,mean_max_depth,mean_domain_pruned_events,mean_values_pruned,mean_decisions,mean_contradictions
+reference_9x9,propagation,30,30,100.0,30,30,100.0,30,30,100.0,1,642.93793666,636.95239997,18.19822583,632.22809997,725.84570001,0,0,0,164,384,0,0
+reference_9x9,full_solver,30,30,100.0,0,0,,30,30,100.0,1,636.43859334,635.36044999,4.40478121,630.26550005,650.62580002,0,0,0,164,384,0,0
+backtracking_demo,propagation,30,0,0.0,30,30,100.0,0,0,,0,2.74369,2.66480003,0.27916247,2.62300001,4.12170001,0,0,0,6,9,0,0
+backtracking_demo,full_solver,30,30,100.0,0,0,,30,30,100.0,1,6.22283667,6.14690001,0.21180957,6.00500003,6.74609997,4,1,3,31,77,4,1
